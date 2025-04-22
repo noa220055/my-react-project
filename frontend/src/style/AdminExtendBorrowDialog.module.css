@@ -1,0 +1,118 @@
+/* Modal container styles */
+.dialogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 15px;
+  width: 800px;
+  margin: auto;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease-out;
+  text-align: center;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Title styling */
+.dialogTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Date input styling */
+.dateInputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.dateInputLabel {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.dateInput {
+  padding: 14px;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.dialogActions {
+  display: flex;
+  justify-content: flex-start; /* Changed to flex-start */
+  width: 100%;
+  margin-top: 30px;
+  gap: 20px;
+  flex-direction: row-reverse; /* This flips the order */
+}
+
+.dialogButton {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  width: 150px;
+  background-color: #ccc;  /* Set the default background color to gray */
+  color: white;
+}
+
+/* Active/Hover states */
+.dialogButtonCancel:not(:disabled):hover {
+  background-color: #f44336;
+}
+
+.dialogButtonConfirm:not(:disabled):hover {
+  background-color: #4caf50;
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .dialogContainer {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .dialogTitle {
+      font-size: 1.5rem;
+  }
+
+  .dialogButton {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}

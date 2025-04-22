@@ -1,0 +1,54 @@
+.admin-equipments-container h2{
+  font-size: 2.6rem;
+}
+.admin-equipments-container {
+  padding: 20px;
+}
+.admin-buttons{
+  margin: 2rem;
+}
+.admin-buttons .admin-equipments-addButton {
+  margin-right: 64.5rem;
+  background-color: rgba(189, 43, 226, 0.888);
+}
+.admin-buttons .admin-equipments-borrowsButton{
+  background-color: rgba(189, 43, 226, 0.888);
+}
+.admin-buttons .admin-equipments-addButton:hover {
+  background-color: rgba(189, 43, 226, 0.433);
+}
+.admin-buttons .admin-equipments-borrowsButton:hover{
+  background-color: rgba(189, 43, 226, 0.433);
+}
+
+.admin-equipments-error {
+  color: red;
+}
+
+.admin-equipments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.admin-equipments-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.admin-equipments-card:hover {
+  transform: scale(1.05);
+}
+
+.admin-equipments-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.admin-equipments-details {
+  margin-top: 10px;
+}

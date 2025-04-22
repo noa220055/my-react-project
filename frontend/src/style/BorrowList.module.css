@@ -1,0 +1,117 @@
+.BorrowListPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('/photos/butterflies.avif'); /* כאן תכניס את הנתיב לתמונה */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.borrowListContainer {
+    max-width: 10000px;
+    margin-right: 3rem;
+    /* margin-left: 5rem; */
+    /* margin: 0 auto; */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    /* max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.17);
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(245, 245, 245, 0.85);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.borrowListTitle {
+    font-size: 2.5rem;
+    /* color: rgb(34, 34, 34); */
+    font-weight: 600;
+    color: rgba(245, 245, 245, 0.527);
+    margin-bottom: 50px;
+}
+
+.borrowGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.borrowItem {
+    width: 45rem;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.borrowItem:hover {
+    transform: scale(1.02);
+}
+
+.borrowItem h3 {
+    font-size: 1.8rem;
+    color: #424242;
+    margin-bottom: 8px;
+}
+
+.borrowItem p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 5px 0;
+}
+
+.status {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.borrowed {
+    width: 100%;
+    text-align: center;
+    background-color: #ffcc00b7;
+    color: #333;
+}
+
+.borrowListContainer .returned {
+    width: 100%;
+    text-align: center;
+    background-color: #a66e2a;
+    color: rgb(0, 0, 0);
+    /* font-weight: 400; */
+}
+
+.borrowListContainer button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:rgb(224, 196, 146);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.borrowListContainer button:hover {
+    background-color: rgb(143, 124, 93);
+}

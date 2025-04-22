@@ -1,0 +1,25 @@
+.home-page {
+   background-image: url(photos/grandLibrary.webp); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    color: aliceblue;
+} 
+ .home-container {
+    margin-left: 23rem;
+    margin-right: 23rem;
+}
+.home-button{
+    background-color: rgb(33, 33, 33);
+    margin: 0.5rem;
+}
+.home-button:hover{
+    border: 0cap;
+    background-color: rgb(65, 65, 65);
+    margin: 0.5rem;
+}
+
+.home-title{
+    font-size: 4.5rem;
+}

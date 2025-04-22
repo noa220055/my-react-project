@@ -1,0 +1,43 @@
+
+/* מוודא שכל הדף יהיה ממורכז */
+.loader-page-admin {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* גובה מלא של הדף */
+    width: 100vw; /* רוחב מלא של הדף */
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  }
+  
+  /* מוודא שהתוכן בתוך ה־Loader יוצג במרכז */
+  .loader-container-admin {
+    border: solid black;
+    border: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color:whitesmoke;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .loading-text-admin {
+    animation: fadeInOut 1s infinite alternate;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  

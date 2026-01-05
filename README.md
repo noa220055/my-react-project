@@ -47,6 +47,7 @@ The goal of this project was to:
 
 ## 📂 Project Structure
 
+```text
 my-react-project/
 ├── frontend/                  # React client application
 │ ├── src/
@@ -64,6 +65,7 @@ my-react-project/
 │
 └── README.md
 
+```
 ---
 
 ## 🚀 Getting Started (Run Locally)
